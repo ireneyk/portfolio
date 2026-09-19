@@ -397,3 +397,14 @@ h1, h2, h3, h4 {
         grid-template-columns: 1fr;
     }
 }
+
+.cert-badge { transition: all 0.3s ease; }
+.cert-badge:hover { background: #fff; transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+
+/* Contact Form */
+.contact-form { display: flex; flex-direction: column; gap: 1.5rem; text-align: left; margin-bottom: 2rem; }
+.form-group { width: 100%; }
+.form-input { width: 100%; padding: 1rem 1.5rem; border-radius: 15px; border: 1px solid rgba(255,255,255,0.8); background: rgba(255,255,255,0.6); font-family: 'Nunito', sans-serif; font-size: 1rem; color: var(--text-main); transition: all 0.3s ease; }
+.form-input:focus { outline: none; background: #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.submit-button { padding: 1rem 2.5rem; border-radius: 50px; background: var(--text-main); color: #fff; border: none; font-weight: 700; font-size: 1.1rem; cursor: pointer; transition: all 0.3s ease; display: inline-flex; justify-content: center; align-items: center; }
+.submit-button:hover { background: var(--accent); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
