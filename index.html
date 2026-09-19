@@ -3,234 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irene Therese Joseph - Data Scientist & Business Analyst</title>
+    <title>irene x joseph. portfolio</title>
     <link rel="stylesheet" href="styles.css">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar glass-panel fade-in-nav">
-        <div class="nav-brand">ITJ</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#leadership">Leadership</a></li>
-        </ul>
+    
+    <!-- Top-left logo doodle -->
+    <div class="logo">
+        <svg viewBox="0 0 100 100" width="40" height="40">
+           <path d="M30,70 Q50,20 70,70" fill="none" stroke="#ccc" stroke-width="4" stroke-linecap="round"/>
+           <rect x="35" y="40" width="30" height="20" fill="none" stroke="#ccc" stroke-width="3" rx="5"/>
+           <circle cx="45" cy="50" r="2" fill="#ccc"/>
+           <circle cx="55" cy="50" r="2" fill="#ccc"/>
+        </svg>
+    </div>
+
+    <!-- Navigation matches the aesthetic -->
+    <nav class="nav">
+        <a href="#about" class="active"><sup>1</sup>about.</a>
+        <a href="#portfolio"><sup>2</sup>portfolio.</a>
+        <a href="#experience"><sup>3</sup>experience.</a>
+        <a href="#contact"><sup>4</sup>contact.</a>
     </nav>
 
-    <header class="hero" id="home">
-        <div class="hero-content glass-panel fade-in">
-            <img src="placeholder-portrait.jpg" alt="Irene Therese Joseph" class="profile-pic">
-            <h1 class="hero-title">Irene Therese Joseph</h1>
-            <h2 class="hero-subtitle">Transforming Data into Strategic Business Value</h2>
-            <p class="hero-description">Specializing in Machine Learning, Predictive Analytics, and A/B Testing.</p>
-            <a href="#projects" class="cta-button">View Data Projects</a>
-        </div>
-    </header>
-
-    <main>
-        <!-- Experience Section -->
-        <section id="experience" class="section">
-            <div class="section-container">
-                <h2 class="section-title fade-in">Experience</h2>
+    <main class="container">
+        <!-- Hero Section -->
+        <section id="about" class="hero-section">
+            <div class="text-content">
+                <h1 class="greeting">hello,</h1>
+                <h1 class="subtitle">my name is</h1>
+                <h1 class="name"><span class="red">irene</span><span class="x">x</span><span class="red">joseph.</span></h1>
                 
-                <div class="card glass-panel fade-in" style="margin-bottom: 2rem;">
-                    <div class="card-content">
-                        <h3>Bharat Sanchar Nigam Limited (BSNL)</h3>
-                        <h4 style="color: var(--text-muted); margin-bottom: 1rem; font-family: 'Nunito', sans-serif;">Summer Intern – Networking and Telecommunications | Thrissur, Kerala | June 2025 – July 2025</h4>
-                        <ul style="padding-left: 1.5rem; margin-bottom: 1.5rem;">
-                            <li style="margin-bottom: 0.5rem;">Analyzed digital switching systems and broadband architectures to understand core exchange operations.</li>
-                            <li style="margin-bottom: 0.5rem;">Gained hands-on exposure to FTTH (Fiber to the Home) maintenance and optical fiber transmission fault localization.</li>
-                            <li>Observed real-time network management and LAN configurations for enterprise-scale data transmission.</li>
-                        </ul>
+                <div class="description-grid">
+                    <div class="desc-col">
+                        <p>I am a <em>Data Scientist</em>, an <em>Analyst</em>, an introvert and a dreamer.</p>
+                    </div>
+                    <div class="desc-col">
+                        <p>I love transforming data into strategic business value with the occasional habits of finding actionable evidence and creating insights.</p>
                     </div>
                 </div>
+            </div>
+            <div class="image-content">
+                <!-- Our generated doodle -->
+                <img src="doodle-hero.jpg" alt="doodle" class="doodle-img">
+            </div>
+        </section>
 
-                <div class="card glass-panel fade-in">
-                    <div class="card-content">
-                        <h3>Internal Fraud Detection (Satyendra Nath Bose Summer Research)</h3>
-                        <h4 style="color: var(--text-muted); margin-bottom: 1rem; font-family: 'Nunito', sans-serif;">Summer Intern – Machine Learning (Guide: Dr. Malaya Dutta Borah) | NIT Silchar | Jun 2026 – Jul 2026</h4>
-                        <ul style="padding-left: 1.5rem; margin-bottom: 1.5rem;">
-                            <li style="margin-bottom: 0.5rem;">Co-developed a multi-domain Internal Fraud Detection framework deploying four specialized Random Forest classifiers (Scikit-learn, Python) to identify insider threats, procurement, and payroll fraud.</li>
-                            <li style="margin-bottom: 0.5rem;">Architected a Composite Risk Engine to aggregate multi-domain probabilities into unified employee risk scores; implemented automated feature encoding and class-balanced sampling.</li>
-                            <li>Developed an interactive real-time monitoring dashboard in Streamlit, achieving 97.0% accuracy on a 118k+ record insider threat dataset and 92.8% on procurement fraud.</li>
-                        </ul>
-                        <a href="https://github.com/Namita2803/Internal-Fraud-Detection-System.git" target="_blank" class="repo-button"><i class="fab fa-github"></i> View Code Repository</a>
-                    </div>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section fade-in">
+            <h2 class="section-title">portfolio.</h2>
+            <div class="grid">
+                <div class="minimal-card">
+                    <img src="project1.png" alt="Telecom Churn">
+                    <h3>Telecom Customer Churn</h3>
+                    <p>Engineered an ML pipeline via SQL Server and Python to predict customer attrition. Isolated 1,270 high-risk accounts to protect $82,500 in monthly revenue.</p>
+                    <a href="https://github.com/ireneyk/Telecom-Customer-Churn-Analysis-and-Prediction" target="_blank" class="btn-outline">View Repository</a>
+                </div>
+
+                <div class="minimal-card">
+                    <img src="project3.png" alt="CropCare">
+                    <h3>CropCare AI</h3>
+                    <p>Architected a machine learning framework designed to deliver data-driven agricultural insights. Optimized predictive models to support sustainable farming.</p>
+                    <a href="https://github.com/ireneyk/CropCare" target="_blank" class="btn-outline">View Repository</a>
+                </div>
+
+                <div class="minimal-card">
+                    <!-- Placeholder image since there is no project 2 image yet -->
+                    <img src="placeholder-project2.jpg" alt="A/B Testing">
+                    <h3>Cookie Cats A/B Testing</h3>
+                    <p>Conducted robust statistical retention analysis in Python for over 90,000 game players. Executed data simulations that proved original design superiority.</p>
+                    <a href="https://github.com/ireneyk/cookie-cats-a-b-testing" target="_blank" class="btn-outline">View Repository</a>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="section-container">
-                <h2 class="section-title fade-in">Data Projects</h2>
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <div class="card glass-panel fade-in">
-                        <img src="project1.png" alt="Telecom Churn Project" class="card-image">
-                        <div class="card-content">
-                            <h3>Telecom Customer Churn</h3>
-                            <p>Engineered an ML pipeline via SQL Server and Python to predict customer attrition. Isolated 1,270 high-risk accounts to protect $82,500 in monthly revenue, visualized through a custom Power BI dashboard that uncovered primary churn drivers.</p>
-                            <a href="https://github.com/ireneyk/Telecom-Customer-Churn-Analysis-and-Prediction" target="_blank" class="repo-button"><i class="fab fa-github"></i> View Repository</a>
-                        </div>
-                    </div>
+        <!-- Experience & Leadership Section -->
+        <section id="experience" class="section fade-in">
+            <h2 class="section-title">experience & awards.</h2>
+            
+            <div class="timeline">
+                <div class="minimal-card" style="margin-bottom: 2rem;">
+                    <h3>Bharat Sanchar Nigam Limited (BSNL)</h3>
+                    <h4>Summer Intern – Networking | Kerala | Jun 2025 – Jul 2025</h4>
+                    <ul>
+                        <li>Analyzed digital switching systems and broadband architectures to understand core exchange operations.</li>
+                        <li>Gained hands-on exposure to FTTH maintenance and optical fiber transmission fault localization.</li>
+                        <li>Observed real-time network management and LAN configurations for data transmission.</li>
+                    </ul>
+                </div>
 
-                    <!-- Project 2 -->
-                    <div class="card glass-panel fade-in" style="transition-delay: 100ms;">
-                        <img src="placeholder-project2.jpg" alt="A/B Testing Project" class="card-image">
-                        <div class="card-content">
-                            <h3>Cookie Cats A/B Testing</h3>
-                            <p>Conducted robust statistical retention analysis in Python for over 90,000 game players. Executed data simulations that proved the original design was superior with 99.9% certainty, providing leadership with definitive, actionable evidence.</p>
-                            <a href="https://github.com/ireneyk/cookie-cats-a-b-testing" target="_blank" class="repo-button"><i class="fab fa-github"></i> View Repository</a>
-                        </div>
-                    </div>
+                <div class="minimal-card" style="margin-bottom: 2rem;">
+                    <h3>Internal Fraud Detection (Satyendra Nath Bose Research)</h3>
+                    <h4>Summer Intern – Machine Learning | NIT Silchar | Jun 2026 – Jul 2026</h4>
+                    <ul>
+                        <li>Co-developed a multi-domain framework deploying four Random Forest classifiers to identify insider threats.</li>
+                        <li>Architected a Composite Risk Engine to aggregate multi-domain probabilities into unified risk scores.</li>
+                        <li>Developed an interactive monitoring dashboard in Streamlit, achieving 97.0% accuracy on a 118k+ record dataset.</li>
+                    </ul>
+                    <a href="https://github.com/Namita2803/Internal-Fraud-Detection-System.git" target="_blank" class="btn-outline">View Code Repository</a>
+                </div>
 
-                    <!-- Project 3 -->
-                    <div class="card glass-panel fade-in" style="transition-delay: 200ms;">
-                        <img src="project3.png" alt="CropCare AI Project" class="card-image">
-                        <div class="card-content">
-                            <h3>CropCare AI</h3>
-                            <p>Architected and built a machine learning framework designed to deliver data-driven agricultural insights. Optimized predictive models to support sustainable farming practices and crop yield enhancements.</p>
-                            <a href="https://github.com/ireneyk/CropCare" target="_blank" class="repo-button"><i class="fab fa-github"></i> View Repository</a>
-                        </div>
-                    </div>
+                <div class="minimal-card">
+                    <h3>Positions of Responsibility & Awards</h3>
+                    <ul>
+                        <li><strong>UI/UX Developer, GDG NIT Silchar (May 2024–Jul 2025):</strong> Designed intuitive interfaces.</li>
+                        <li><strong>Marketing Associate, E-Cell NIT Silchar (Aug 2024–Feb 2025):</strong> Drove promotional campaigns.</li>
+                        <li><strong>FFE Scholar & Amazon Future Engineer (AFE):</strong> Selected from 513 top engineering students nationwide.</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Skills & Certifications Section -->
-        <section id="skills" class="section">
-            <div class="section-container">
-                <h2 class="section-title fade-in">Technical Expertise & Certifications</h2>
-                <div class="skills-container glass-panel fade-in">
-                    
-                    <h3 class="certs-title" style="font-size: 1.4rem; text-align: left; margin-bottom: 1rem;">Languages & Databases</h3>
-                    <div class="skills-grid" style="justify-content: flex-start; gap: 0.8rem; margin-bottom: 2rem;">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                    </div>
+        <!-- Skills Section -->
+        <section class="section fade-in">
+            <h2 class="section-title">skills.</h2>
+            
+            <div class="tag-container">
+                <span class="minimal-tag">Python</span>
+                <span class="minimal-tag">C++</span>
+                <span class="minimal-tag">SQL</span>
+                <span class="minimal-tag">PostgreSQL</span>
+                <span class="minimal-tag">Pandas</span>
+                <span class="minimal-tag">Scikit-Learn</span>
+                <span class="minimal-tag">TensorFlow</span>
+                <span class="minimal-tag">PyTorch</span>
+                <span class="minimal-tag">Power BI</span>
+                <span class="minimal-tag">Git</span>
+                <span class="minimal-tag">A/B Testing</span>
+                <span class="minimal-tag">Predictive Modeling</span>
+            </div>
 
-                    <h3 class="certs-title" style="font-size: 1.4rem; text-align: left; margin-bottom: 1rem;">Libraries & Frameworks</h3>
-                    <div class="skills-grid" style="justify-content: flex-start; gap: 0.8rem; margin-bottom: 2rem;">
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">SciPy</span>
-                        <span class="skill-tag">Scikit-Learn</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">PyTorch</span>
-                    </div>
-
-                    <h3 class="certs-title" style="font-size: 1.4rem; text-align: left; margin-bottom: 1rem;">Tools & OS</h3>
-                    <div class="skills-grid" style="justify-content: flex-start; gap: 0.8rem; margin-bottom: 2rem;">
-                        <span class="skill-tag">Git/GitHub</span>
-                        <span class="skill-tag">GitHub Copilot</span>
-                        <span class="skill-tag">Cursor</span>
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">Excel</span>
-                        <span class="skill-tag">Jupyter Notebook</span>
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Windows</span>
-                    </div>
-
-                    <h3 class="certs-title" style="font-size: 1.4rem; text-align: left; margin-bottom: 1rem;">Core Concepts</h3>
-                    <div class="skills-grid" style="justify-content: flex-start; gap: 0.8rem; margin-bottom: 2rem;">
-                        <span class="skill-tag">Statistical Analysis</span>
-                        <span class="skill-tag">A/B Testing</span>
-                        <span class="skill-tag">Predictive Modeling</span>
-                        <span class="skill-tag">Data Visualization</span>
-                        <span class="skill-tag">UI/UX</span>
-                    </div>
-
-                    <hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.1); margin: 2.5rem 0;">
-                    
-                    <h3 class="certs-title">Certifications</h3>
-                    <div class="certs-grid">
-                        <a href="https://www.coursera.org/account/accomplishments/professional-cert/JF5DUZZIT7DG" target="_blank" class="cert-badge" style="text-decoration: none; color: inherit;"><i class="fab fa-google"></i> Google Data Analytics</a>
-                        <a href="https://www.coursera.org/account/accomplishments/professional-cert/FJ645CULUD34" target="_blank" class="cert-badge" style="text-decoration: none; color: inherit;"><i class="fas fa-certificate"></i> IBM Data Science Professional</a>
-                    </div>
-                </div>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/JF5DUZZIT7DG" target="_blank" class="btn-outline"><i class="fab fa-google"></i> Google Data Analytics</a>
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/FJ645CULUD34" target="_blank" class="btn-outline"><i class="fas fa-certificate"></i> IBM Data Science</a>
             </div>
         </section>
 
-        <!-- Leadership & Awards Section -->
-        <section id="leadership" class="section">
-            <div class="section-container">
-                <h2 class="section-title fade-in">Positions of Responsibility & Awards</h2>
+        <!-- Contact Section -->
+        <section id="contact" class="section fade-in" style="border-bottom: none; padding-bottom: 50px;">
+            <h2 class="section-title">contact.</h2>
+            
+            <form action="https://formsubmit.co/el/sulipi" method="POST" class="contact-form">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New message from your Portfolio!">
                 
-                <div class="card glass-panel fade-in" style="margin-bottom: 2rem;">
-                    <div class="card-content">
-                        <h3>Campus Leadership</h3>
-                        <ul style="padding-left: 1.5rem; margin-top: 1rem; margin-bottom: 1rem;">
-                            <li style="margin-bottom: 1rem;"><strong>UI/UX Developer, Google Developer Groups on Campus (GDG), NIT Silchar (May 2024–Jul 2025):</strong> Designed intuitive user interfaces for technical projects.</li>
-                            <li><strong>Marketing Associate, Entrepreneurship Cell (E-Cell), NIT Silchar (Aug 2024–Feb 2025):</strong> Drove promotional campaigns and engagement for campus-wide entrepreneurial events.</li>
-                        </ul>
-                    </div>
+                <input type="text" name="name" placeholder="Name" required class="form-input">
+                <input type="email" name="email" placeholder="Email" required class="form-input">
+                <textarea name="message" placeholder="Message" rows="4" required class="form-input"></textarea>
+                
+                <div style="display: flex; gap: 1rem; margin-top: 10px;">
+                    <button type="submit" class="btn-red" style="flex: 1;">Send Email</button>
+                    <a href="https://wa.me/918547895650" target="_blank" class="btn-red" style="background: #25D366; flex: 1;">WhatsApp Me</a>
                 </div>
+            </form>
 
-                <div class="card glass-panel fade-in">
-                    <div class="card-content">
-                        <h3>Awards & Scholarships</h3>
-                        <ul style="padding-left: 1.5rem; margin-top: 1rem; margin-bottom: 1rem;">
-                            <li style="margin-bottom: 1rem;"><strong>Foundation for Excellence (FFE) Scholar:</strong> Recognized for academic excellence.</li>
-                            <li><strong>Amazon Future Engineer (AFE) Bootcamp:</strong> Competitively selected from a nationwide pool of 513 top engineering students to participate in this prestigious bootcamp.</li>
-                        </ul>
-                    </div>
-                </div>
+            <div style="margin-top: 40px; display: flex; gap: 20px;">
+                <a href="https://github.com/ireneyk" target="_blank" style="color: var(--text-mid-grey); font-size: 1.5rem;"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/" target="_blank" style="color: var(--text-mid-grey); font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
             </div>
         </section>
     </main>
 
-    <footer id="contact" class="footer">
-        <div class="footer-content glass-panel fade-in" style="max-width: 800px;">
-            <h2>Let's Connect</h2>
-            <p style="margin-bottom: 2rem;">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
-            
-            <!-- Contact Form -->
-            <form action="https://formsubmit.co/el/sulipi" method="POST" class="contact-form">
-                <!-- Disable Captcha for a smoother experience (optional) -->
-                <input type="hidden" name="_captcha" value="false">
-                <!-- Set the email subject -->
-                <input type="hidden" name="_subject" value="New message from your Portfolio!">
-                <!-- Set a redirect page after submit (optional, defaults to formsubmit's thank you page) -->
-                <input type="hidden" name="_next" value="">
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active'));
+                this.classList.add('active');
                 
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required class="form-input">
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" required class="form-input">
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" rows="5" required class="form-input"></textarea>
-                </div>
-                
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <button type="submit" class="submit-button" style="flex: 1;">Send Email <i class="fas fa-paper-plane" style="margin-left: 8px;"></i></button>
-                    <a href="https://wa.me/918547895650" target="_blank" class="submit-button" style="flex: 1; background: #25D366; text-decoration: none;">WhatsApp Me <i class="fab fa-whatsapp" style="margin-left: 8px; font-size: 1.2rem;"></i></a>
-                </div>
-            </form>
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-            <div class="social-links" style="margin-top: 3rem;">
-                <a href="https://github.com/ireneyk" target="_blank" class="social-icon"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://linkedin.com/in/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            </div>
-            <p>&copy; 2026 Irene Therese Joseph. All rights reserved.</p>
-        </div>
-    </footer>
+        // Simple Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
 
-    <script src="script.js"></script>
+        document.querySelectorAll('.fade-in').forEach((el) => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
