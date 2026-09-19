@@ -58,9 +58,9 @@
                     <!-- Floating Data Icons that pop out on hover -->
                     <div class="chart-icon icon-1"><i class="fas fa-chart-pie"></i></div>
                     <div class="chart-icon icon-2"><i class="fas fa-chart-line"></i></div>
-                    <div class="chart-icon icon-3"><i class="fas fa-table"></i></div>
+                    <div class="chart-icon icon-3"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="60" alt="Power BI"></div>
                     <div class="chart-icon icon-4"><i class="fas fa-database"></i></div>
-                    <div class="chart-icon icon-5"><i class="fas fa-project-diagram"></i></div>
+                    <div class="chart-icon icon-5"><i class="fas fa-table"></i></div>
                 </div>
             </div>
         </section>
@@ -195,21 +195,40 @@
             });
         });
 
-        // Simple Intersection Observer for scroll animations
+        // Bouncy Scroll Reveal
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
+            entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
-                    entry.target.style.opacity = 1;
-                    entry.target.style.transform = 'translateY(0)';
+                    setTimeout(() => {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0) scale(1)';
+                    }, index * 100); // Stagger the animations
                 }
             });
         }, { threshold: 0.1 });
 
-        document.querySelectorAll('.fade-in').forEach((el) => {
+        document.querySelectorAll('.fade-in, .minimal-card, .minimal-tag').forEach((el) => {
             el.style.opacity = 0;
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            el.style.transform = 'translateY(40px) scale(0.95)';
+            el.style.transition = 'all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
             observer.observe(el);
+        });
+
+        // Initial Page Load Stagger Animation
+        window.addEventListener('load', () => {
+            const heroElements = ['.greeting', '.subtitle', '.name', '.description-grid', '.doodle-container'];
+            heroElements.forEach((selector, index) => {
+                const el = document.querySelector(selector);
+                if(el) {
+                    el.style.opacity = '0';
+                    el.style.transform = 'translateY(30px)';
+                    el.style.transition = 'all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+                    setTimeout(() => {
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0)';
+                    }, 100 + (index * 150));
+                }
+            });
         });
     </script>
 </body>
