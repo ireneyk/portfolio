@@ -142,7 +142,7 @@ a, button, input, textarea, .doodle-container, .minimal-card {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 /* INTERACTIVE DOODLE STYLES */

@@ -153,26 +153,20 @@
         <section id="contact" class="section fade-in" style="border-bottom: none; padding-bottom: 50px;">
             <h2 class="section-title">contact.</h2>
             
-            <form id="contactForm" class="contact-form">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_subject" value="New message from your Portfolio!">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="4791103b-4104-495d-9e7d-ad98cd35133c">
+                <input type="hidden" name="subject" value="New message from your Portfolio!">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 
-                <input type="text" id="senderName" name="name" placeholder="Name" required class="form-input">
-                <input type="email" id="senderEmail" name="email" placeholder="Email" required class="form-input">
-                <textarea id="senderMessage" name="message" placeholder="Message" rows="4" required class="form-input"></textarea>
+                <input type="text" name="name" placeholder="Name" required class="form-input">
+                <input type="email" name="email" placeholder="Email" required class="form-input">
+                <textarea name="message" placeholder="Message" rows="4" required class="form-input"></textarea>
                 
                 <div style="display: flex; gap: 1rem; margin-top: 10px;">
-                    <button type="button" onclick="sendMail()" class="btn-red" style="flex: 1;">Send Email</button>
+                    <button type="submit" class="btn-red" style="flex: 1;">Send Email</button>
                     <a href="https://wa.me/918547895650" target="_blank" class="btn-red" style="background: #25D366; flex: 1; text-align: center;">WhatsApp Me</a>
                 </div>
             </form>
-            <script>
-                function sendMail() {
-                    let name = document.getElementById("senderName").value;
-                    let message = document.getElementById("senderMessage").value;
-                    window.location.href = `mailto:ireneeetherese@gmail.com?subject=New Message from ${name}&body=${encodeURIComponent(message)}`;
-                }
-            </script>
 
             <div style="margin-top: 40px; display: flex; gap: 20px;">
                 <a href="https://github.com/ireneyk" target="_blank" style="color: var(--text-mid-grey); font-size: 1.5rem;"><i class="fab fa-github"></i></a>
