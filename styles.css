@@ -217,9 +217,9 @@ a, button, input, textarea, .doodle-container, .minimal-card {
 }
 
 .minimal-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-15px) scale(1.03);
     border-color: var(--red);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 20px 40px rgba(255, 10, 10, 0.08);
 }
 
 .minimal-card .btn-outline {
@@ -230,7 +230,7 @@ a, button, input, textarea, .doodle-container, .minimal-card {
 .minimal-card h3 {
     font-size: 1.3rem;
     color: var(--text-dark);
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-top: 0;
     font-weight: 700;
 }
@@ -385,3 +385,11 @@ a, button, input, textarea, .doodle-container, .minimal-card {
 .doodle-container { animation: float 6s ease-in-out infinite; }
 @keyframes drawUnderline { from { width: 0; } to { width: 100%; } }
 .active::after { animation: drawUnderline 0.5s ease forwards; }
+
+.tag:hover {
+    background: var(--red);
+    color: #fff;
+    transform: translateY(-5px) scale(1.1) rotate(2deg);
+    box-shadow: 0 10px 20px rgba(255, 10, 10, 0.15);
+}
+
