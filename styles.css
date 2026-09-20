@@ -151,7 +151,7 @@ a, button, input, textarea, .doodle-container, .minimal-card {
     display: inline-block; 
 }
 .doodle-img {
-    max-width: 90%;
+    max-width: 105%;
     height: auto;
     mix-blend-mode: multiply; 
     position: relative; 
@@ -392,5 +392,31 @@ a, button, input, textarea, .doodle-container, .minimal-card {
     color: #fff;
     transform: translateY(-5px) scale(1.1) rotate(2deg);
     box-shadow: 0 10px 20px rgba(255, 10, 10, 0.15);
+}
+
+
+/* CONTACT LAYOUT & PROFILE REVEAL */
+.contact-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    align-items: center;
+}
+.contact-right {
+    display: flex;
+    justify-content: center;
+}
+.profile-reveal {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    filter: blur(12px) grayscale(80%);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+.profile-reveal:hover {
+    filter: blur(0px) grayscale(0%);
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 

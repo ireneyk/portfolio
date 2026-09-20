@@ -153,24 +153,33 @@
         <section id="contact" class="section fade-in" style="border-bottom: none; padding-bottom: 50px;">
             <h2 class="section-title">contact.</h2>
             
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                <input type="hidden" name="access_key" value="4791103b-4104-495d-9e7d-ad98cd35133c">
-                <input type="hidden" name="subject" value="New message from your Portfolio!">
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                
-                <input type="text" name="name" placeholder="Name" required class="form-input">
-                <input type="email" name="email" placeholder="Email" required class="form-input">
-                <textarea name="message" placeholder="Message" rows="4" required class="form-input"></textarea>
-                
-                <div style="display: flex; gap: 1rem; margin-top: 10px;">
-                    <button type="submit" class="btn-red" style="flex: 1;">Send Email</button>
-                    <a href="https://wa.me/918547895650" target="_blank" class="btn-red" style="background: #25D366; flex: 1; text-align: center;">WhatsApp Me</a>
-                </div>
-            </form>
+            <div class="contact-layout">
+                <div class="contact-left">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                        <input type="hidden" name="access_key" value="4791103b-4104-495d-9e7d-ad98cd35133c">
+                        <input type="hidden" name="subject" value="New message from your Portfolio!">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        
+                        <input type="text" name="name" placeholder="Name" required class="form-input">
+                        <input type="email" name="email" placeholder="Email" required class="form-input">
+                        <textarea name="message" placeholder="Message" rows="4" required class="form-input"></textarea>
+                        
+                        <div style="display: flex; gap: 1rem; margin-top: 10px;">
+                            <button type="submit" class="btn-red" style="flex: 1;">Send Email</button>
+                            <a href="https://wa.me/918547895650" target="_blank" class="btn-red" style="background: #25D366; flex: 1; text-align: center;">WhatsApp Me</a>
+                        </div>
+                    </form>
 
-            <div style="margin-top: 40px; display: flex; gap: 20px;">
-                <a href="https://github.com/ireneyk" target="_blank" style="color: var(--text-mid-grey); font-size: 1.5rem;"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/" target="_blank" style="color: var(--text-mid-grey); font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+                    <div style="margin-top: 40px; display: flex; gap: 20px;">
+                        <a href="https://github.com/ireneyk" target="_blank" style="color: var(--text-mid-grey); font-size: 1.5rem;"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/ireneyk" target="_blank" style="color: var(--text-mid-grey); font-size: 1.5rem;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:ireneeetherese@gmail.com" style="color: var(--text-mid-grey); font-size: 1.5rem;"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <img src="profile.jpg" alt="Irene" class="profile-reveal">
+                </div>
             </div>
         </section>
     </main>
