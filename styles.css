@@ -406,39 +406,27 @@ a, button, input, textarea, .doodle-container, .minimal-card {
     display: flex;
     justify-content: center;
 }
-.pixel-wrapper {
+.sketchy-wrapper {
     position: relative;
     width: 100%;
-    max-width: 250px; /* Made a lot smaller! */
-    aspect-ratio: 3/4; /* Keeps the portrait shape */
-    cursor: pointer;
+    max-width: 280px;
+    padding: 15px;
+    border: 3px solid var(--red);
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: #fff;
+}
+.sketchy-wrapper:hover {
+    transform: translateY(-10px) rotate(3deg);
+    border-radius: 15px 255px 15px 225px / 255px 15px 225px 15px;
+    box-shadow: 0 15px 30px rgba(255, 10, 10, 0.1);
 }
 .profile-reveal {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 4/5;
     object-fit: cover;
-    border-radius: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.profile-reveal.pixelated {
-    filter: url(#pixelate) grayscale(60%);
-    opacity: 1;
-    z-index: 2;
-}
-.profile-reveal.clear {
-    opacity: 0;
-    z-index: 1;
-}
-.pixel-wrapper:hover .profile-reveal.pixelated {
-    opacity: 0;
-    transform: scale(1.1) rotate(-3deg);
-}
-.pixel-wrapper:hover .profile-reveal.clear {
-    opacity: 1;
-    transform: scale(1.1) rotate(-3deg);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    object-position: center;
+    border-radius: 8px;
+    display: block;
 }
 

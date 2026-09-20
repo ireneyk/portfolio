@@ -153,17 +153,6 @@
         <section id="contact" class="section fade-in" style="border-bottom: none; padding-bottom: 50px;">
             <h2 class="section-title">contact.</h2>
             
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: none;">
-                <defs>
-                    <filter id="pixelate">
-                        <feFlood x="0" y="0" width="1" height="1" />
-                        <feComposite width="12" height="12" />
-                        <feTile result="a" />
-                        <feComposite in="SourceGraphic" in2="a" operator="in" />
-                        <feMorphology operator="dilate" radius="6" />
-                    </filter>
-                </defs>
-            </svg>
             <div class="contact-layout">
                 <div class="contact-left">
                     <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
@@ -189,10 +178,8 @@
                 </div>
 
                 <div class="contact-right">
-                    <!-- Added a wrapper to allow fading the pixelation filter smoothly -->
-                    <div class="pixel-wrapper">
-                        <img src="profile.jpg" alt="Irene" class="profile-reveal pixelated">
-                        <img src="profile.jpg" alt="Irene" class="profile-reveal clear">
+                    <div class="sketchy-wrapper">
+                        <img src="profile2.jpg" alt="Irene" class="profile-reveal">
                     </div>
                 </div>
             </div>
