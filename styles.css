@@ -409,7 +409,7 @@ a, button, input, textarea, .doodle-container, .minimal-card {
 .sketchy-wrapper {
     position: relative;
     width: 100%;
-    max-width: 280px;
+    max-width: 320px;
     padding: 15px;
     border: 3px solid var(--red);
     border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
@@ -423,9 +423,9 @@ a, button, input, textarea, .doodle-container, .minimal-card {
 }
 .profile-reveal {
     width: 100%;
-    aspect-ratio: 4/5;
+    aspect-ratio: 1/1;
     object-fit: cover;
-    object-position: center;
+    object-position: bottom;
     border-radius: 8px;
     display: block;
 }
