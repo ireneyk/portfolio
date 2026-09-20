@@ -4,7 +4,7 @@
     --text-light-grey: #eaeaea; /* Darkened from f5f5f5 */
     --text-mid-grey: #888888; /* Darkened from a0a0a0 */
     --text-dark: #222222;
-    --red: #ff0a0a;
+    --red: #D27979; /* Changed to a dull, pastel red */
 }
 
 /* Custom Doodle Cursor */
@@ -410,23 +410,24 @@ a, button, input, textarea, .doodle-container, .minimal-card {
     position: relative;
     width: 100%;
     max-width: 320px;
-    padding: 15px;
-    border: 3px solid var(--red);
-    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    padding: 12px;
+    border-style: solid;
+    border-color: var(--red);
+    border-width: 3px 4px 3px 5px;
+    border-radius: 95% 4% 92% 5% / 4% 95% 6% 95%;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     background: #fff;
 }
 .sketchy-wrapper:hover {
-    transform: translateY(-10px) rotate(3deg);
-    border-radius: 15px 255px 15px 225px / 255px 15px 225px 15px;
-    box-shadow: 0 15px 30px rgba(255, 10, 10, 0.1);
+    transform: translateY(-8px) rotate(2deg);
+    border-width: 5px 3px 4px 3px;
+    border-radius: 4% 95% 6% 95% / 95% 4% 92% 5%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
 }
 .profile-reveal {
     width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    object-position: bottom;
-    border-radius: 8px;
+    height: auto;
+    border-radius: 4px;
     display: block;
 }
 
